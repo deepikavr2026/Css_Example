@@ -1,0 +1,24 @@
+input [type]{
+    border: red 20px solid;
+}
+
+input[type="text"]{
+    border: blue 20px solid;
+}
+
+p[class|="important"]{
+    color: green;
+}
+
+a[href^="https"]{
+    color: aqua;
+}
+
+a[href$="index"]{
+    color: beige;
+}
+
+img[src*="logo"]{
+    color: blueviolet;
+}
+
