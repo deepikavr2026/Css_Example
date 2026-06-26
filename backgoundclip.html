@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            border :20px dotted blueviolet;
+            padding: 20px;
+            background: yellowgreen;
+        }
+        .box1{
+            background-clip: border-box;
+        }
+        .box2{
+            background-clip: padding-box;
+        }
+        .box3{
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Border box</div>
+    <br>
+    <div class="box2">Padding box</div>
+    <br>
+    <div class="box3">Content box</div>
+    <br>
+</body>
+</html>
