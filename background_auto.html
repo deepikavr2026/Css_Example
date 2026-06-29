@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div{
+        width: 300px;
+        height: 200px;
+        border: 2px solid brown;
+        margin: 20px;
+        background-image: url(flower.png);
+        background-repeat: no-repeat;
+    }
+    /*1.Auto*/
+    .box1{
+        background-size: auto;
+    }
+    /*2.Length*/
+    .box2{
+        background-size: 100px 100px;
+    }
+    /*3.Cover*/
+    .box3{
+        background-size: cover;
+        background-position: center;
+    }
+    /*4.Contain*/
+    .box4{
+        background-size: contain;
+        backgroung-position: center;
+    }
+    /*5.Initial*/
+    .box5{
+        background-size: initial;
+    }
+    /*6.Inherit*/
+    .box6{
+        background-size: cover;
+        background-position: center;
+    }
+    </style>
+</head>
+<body>
+    <h3>Auto</h3>
+    <div class="box1"></div>
+
+    <h3>Length</h3>
+    <div class="box2"></div>
+
+    <h3>Cover</h3>
+    <div class="box3"></div>
+
+    <h3>Contain</h3>
+    <div class="box4"></div>
+
+    <h3>Initial</h3>
+    <div class="box5"></div>
+
+    <h3>Inherit</h3>
+    <div class="parent"></div>
+        <div class="box6"></div>
+</body>
+</html>
