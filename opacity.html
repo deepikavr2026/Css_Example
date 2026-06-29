@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 250px;
+            height: 100px;
+            margin: 20px;
+            color: indigo;
+            font-size: 20px;
+            text-align: center;
+            line-height: 100px;
+            background: brown;
+        }
+
+        /*1. Fully visible*/
+        .box1{
+            opacity: 1;
+        }
+
+        /*2. Semi transparent*/
+        .box2{
+            opacity: 0.7;
+        }
+
+        /*3. More transparent*/
+        .box3{
+            opacity: 0.3;
+        }
+
+        /*4. Invisible*/
+        .box4{
+            opacity: 0;
+        }
+
+        /*5. Initial*/
+        .box5{
+            opacity: initial;
+        }
+
+        /*6. Parent + child inherit*/
+        .parent{
+            opacity: 0.3;
+            background: red;
+        }
+
+        .child{
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            background: burlywood;
+            opacity: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">opacity 1</div>
+    <div class="box2">opacity 0.7</div>
+    <div class="box3">opacity 0.3</div>
+    <div class="box4">opacity 0</div>
+    <div class="box5">initial</div>
+
+    <div class="parent">
+        parent
+        <div class="child">child</div>
+    </div>
+</body>
+</html>
